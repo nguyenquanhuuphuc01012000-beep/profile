@@ -1,0 +1,150 @@
+<!-- category.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danh mục sản phẩm | Security Knowledge</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Security Knowledge at Your Fingertips</div>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="category.html">Danh mục</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Danh mục Gift Card</h1>
+    <p>Chọn loại gift card bạn cần — dễ dàng, nhanh chóng.</p>
+  </section>
+
+  <section class="featured">
+    <div class="product-grid">
+      <div class="product" onclick="navigateTo('product.html')">
+        <div class="image-placeholder">Ảnh sản phẩm</div>
+        <h3>Gift Card A</h3>
+        <p>200.000 VND</p>
+        <button class="buy-btn">Mua ngay</button>
+      </div>
+      <div class="product" onclick="navigateTo('product.html')">
+        <div class="image-placeholder">Ảnh sản phẩm</div>
+        <h3>Gift Card B</h3>
+        <p>300.000 VND</p>
+        <button class="buy-btn">Mua ngay</button>
+      </div>
+      <div class="product" onclick="navigateTo('product.html')">
+        <div class="image-placeholder">Ảnh sản phẩm</div>
+        <h3>Gift Card C</h3>
+        <p>500.000 VND</p>
+        <button class="buy-btn">Mua ngay</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Security Knowledge at Your Fingertips</p>
+  </footer>
+</body>
+</html>
+
+<!-- product.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm | Security Knowledge</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">Security Knowledge at Your Fingertips</div>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="category.html">Danh mục</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Chi tiết Gift Card</h1>
+  </section>
+
+  <section class="featured">
+    <div class="product-detail">
+      <div class="image-placeholder large">Ảnh sản phẩm</div>
+      <div class="info">
+        <h2>Gift Card A</h2>
+        <p>Giá: <strong>200.000 VND</strong></p>
+        <p>Mô tả: Gift card tiện lợi dùng cho nhiều nền tảng. Thanh toán nhanh chóng và an toàn.</p>
+        <button class="buy-btn" onclick="openModal('Gift Card A')">Mua ngay</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="paymentModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Thanh toán Gift Card</h2>
+      <p>Xác nhận thanh toán cho <strong id="productName">Gift Card</strong></p>
+      <button class="confirm-btn" onclick="navigateTo('thankyou.html')">Xác nhận thanh toán</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Security Knowledge at Your Fingertips</p>
+  </footer>
+</body>
+</html>
+
+<!-- thankyou.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh toán thành công | Security Knowledge</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <section class="hero">
+    <h1>Cảm ơn bạn đã mua hàng!</h1>
+    <p>Thanh toán của bạn đã được xác nhận. Chúng tôi sẽ gửi gift card ngay trong giây lát.</p>
+    <button class="btn-primary" onclick="navigateTo('index.html')">Quay lại trang chủ</button>
+  </section>
+</body>
+</html>
+
+<!-- README.txt -->
+Security Knowledge at Your Fingertips - Website Bán Gift Card
+=============================================================
+
+📦 Cấu trúc thư mục:
+SecurityKnowledge/
+├── index.html
+├── category.html
+├── product.html
+├── thankyou.html
+├── README.txt
+└── assets/
+    ├── css/style.css
+    ├── js/script.js
+    ├── images/ (thêm hình sản phẩm tại đây)
+    └── icons/favicon.ico
+
+🚀 Cách sử dụng:
+1. Giải nén thư mục.
+2. Mở file `index.html` trong trình duyệt (Chrome, Edge, Firefox).
+3. Thay hình sản phẩm của bạn vào thư mục `/assets/images/`.
+4. Mở file `style.css` để thay đổi màu sắc, font hoặc hiệu ứng nếu muốn.
+5. Toàn bộ trang đều responsive (chạy tốt trên điện thoại và máy tính).
+
+💡 Mẹo:
+- Nút "Mua ngay" sẽ hiển thị popup thanh toán.
+- Bạn có thể chỉnh giá hoặc mô tả sản phẩm trong `category.html` và `product.html`.
+
+© 2025 Security Knowledge at Your Fingertips. All rights reserved.
